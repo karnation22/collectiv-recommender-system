@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Collectiv You</title>
+	<link rel="stylesheet" href="plugins/angular-material.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="plugins/hammer.min.js"></script>
+	<script src="plugins/angular.min.js"></script>
+	<script src="plugins/angular-animate.min.js"></script>
+	<script src="plugins/angular-aria.min.js"></script>
+	<script src="plugins/angular-material.min.js"></script>
+	<script src="js/controller_new.js"></script>
+</head>
+<body ng-app = "myApp" ng-controller = "myCtrl">
+	<!-- reinput an image of a person on the user profile,
+		 organize data by theme and subtheme,
+		 present drop down menu for each subtheme, either as a 
+		 radio button or checkbox on case by case basis -->
+
+		 <h1 align="center"> Welcome to the Collectiv Recommender System </h1>
+
+		 <!-- image of the user's profile -->
+		 <img src="http://i.imgur.com/Z1GSykn.jpg" style="width: 100px; height: 140px" style="margin-left: 30px; margin-top: 50px"> 
+		 <br>
+		 Please select an option for each attribute to get recommendations. <br>
+		 Default options are selected for your convenience. <br>
+
+		<!-- keep track of the theme in each case -->
+		<ol type="I">
+			<div ng-repeat="(theme, sub_dicts) in student">
+				<li style="font-size:25px"> <b align="center"> <font size= "5" face="verdana"> {{theme}}</font></b> </li>
+				<p></p>
+				<!-- iterate through the subthemes for each respective theme -->
+				<ol>
+					<div ng-repeat="sub_dict in sub_dicts">		
+						<!-- iterate through all of the choices -->
+						<div ng-repeat="(sub_theme, choices) in sub_dict">
+							<div class="subthemes">
+								<b align="margin-left"><font size="3"> <li> {{sub_theme}} </li>  </font> </b>	
+								<p></p>
+									<!-- mark up the respective choices with radio/checkbox-->
+									<md-radio-group ng-model="data[sub_theme]">	
+										Selected Value: <span style="color:blue"> <b> {{sub_theme}} --> {{data[sub_theme]}} </b> </span> 
+										<div ng-repeat="choice in choices">
+												<md-radio-button name="{{sub_theme}}" value="{{choice}}" aria-label="Label 1">
+													{{choice}} 
+												</md-radio-button>
+										</div>
+									</md-radio-group>
+							</div>
+						</div> <br>
+					</div> <br> 
+				</ol>
+			</div>
+		</ol>
+		<p> 
+			<md-button class="md-accent md-raised md-primary" ng-click="saveAndContinue()" type="button"> Submit </md-button>
+		</p>
+</body>
+</html>

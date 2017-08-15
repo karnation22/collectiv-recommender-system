@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      
+      $.get("/worlddata", function(data) {
+          //semantically modify python to fit jQuery syntax
+          var dataJson = JSON.parse(data.replace(/'/g, ""));
+          var html = ("Here is the city you are in... ".bold()).fontsize(5) + "<br> <br>" ;
+          //iterate through the parsed out data file...
+          for(var j = 0; j < dataJson.length; j++)
+          {
+              //special case on 0 and 1 (city and first rec)
+              //do numerical assignments for recs
+              //display image & text using html commands quoted up
+              if(j === 0)
+              {
+                //print up the name of place, image, and text fields...
+                html += dataJson[j].Name.bold() + "<br>";
+                html += "<img src='" + dataJson[j].Image + "' height ='150' width= '250' alt=''/><br>";
+                html += "<iframe src='" + dataJson[j].Text + "' alt=''/><br> <br> <br>";
+              }
+              else
+              {
+                if(j === 1)
+                {
+                  html += ("and here are your six recommendations...".bold()).fontsize(5) + "<br> <br>";
+                }
+                
+                html += (j + ": " + dataJson[j].Name).bold() + "<br>";
+                html += "<img src='" + dataJson[j].Image + "' height ='150' width= '250' alt=''/><br>";
+                html += "<iframe src='" + dataJson[j].Text + "' alt=''/><br> <br> <br>";
+              }
+          }
+        $('#serverdata').html(html);  
+        }, "text");
+    });
+  </script> 
+
+</head>
+	<title>Collectiv World</title>
+</html>
+
+<body>
+  <!-- val consists of recs; key is the city -->
+	<body id="serverdata"></body>
+
+</body>
