@@ -9,7 +9,7 @@ a.) Run the server and download all of the files into one single folder.
 
 b.) Open the server.py file in text editor and press Ctrl+B to run the program. 
 
-c.) Copy/paste the hyperlink to a browser; the command line should state something along the lines of "Engine Serving on http://.*". 
+c.) Copy/paste link to browser; command line should state something along the lines of "Engine Serving on http://.*". 
 
 **  If the Engine is not working, press Ctrl+S and then press Ctrl+B. 
 
