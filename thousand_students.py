@@ -10,7 +10,9 @@ import os
 theme_list = ["School", "Difficulty Level", "Course Count", "GPA", "Major", "Grad_Year", 
 			"Sports", "Cultural", "Arts", "Travel", "Food","Beauty","Current Industry", "num_prev_comp",
 			"Sex", "Height", "Weight", "Race"]
-## School, Major, Sports, Cultural, Arts, Travel, Food, Beauty, Current Industry, Sex, Race
+
+## Sex (Radio), Race (Radio), School (Radio), Major (Radio), Current Industry (Radio), 
+	## Sports (Checkbox), Cultural (Checkbox), Arts (Checkbox), Travel (Checkbox), Food (Checkbox) , Beauty (Checkbox)
 
 #this is a dump of all of the choices for each theme of same chronological order
 choice_list = [['Public', 'Private', 'Co-Ed', 'Religious Affiliation', 'Other'],['<10', '10->19', '20->29', '30-39', '40+'],
