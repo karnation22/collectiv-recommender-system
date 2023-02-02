@@ -8,7 +8,7 @@ import os
 
 #these are the main themes for which a student is defined
 theme_list = ["School", "Difficulty Level", "Course Count", "GPA", "Major", "Grad_Year", 
-			"Sports", "Cultural", "Arts", "Travel", "Current Industry", "num_prev_comp",
+			"Sports", "Cultural", "Arts", "Travel", "Food","Beauty","Current Industry", "num_prev_comp",
 			"Sex", "Height", "Weight", "Race"]
 
 #this is a dump of all of the choices for each theme of same chronological order
@@ -20,7 +20,8 @@ choice_list = [['Public', 'Private', 'Co-Ed', 'Religious Affiliation', 'Other'],
 				['Arts', 'Cannabis', 'Comics', 'Exhibition', 'Fashion', 'Food and Drinks', 'Museum', 'Other', 'None'],
 				['Photography/Video', 'Visual Arts', 'Sculpture/3D', 'Drawing', 'Ceramics', 'Collage', 
 				 'Fine Arts', 'Architecture', 'Other', 'None'],['Study Abroad', 'Vacation', 'Business', 'Exploration', 
-				 'Missionary/Religious Travel','Honeymoon', 'Other', 'None'], ['Financial', 'Medical', 'Media & Entertainment', 
+				 'Missionary/Religious Travel','Honeymoon', 'Other', 'None'], ['Chinese', 'Thai', 'Vietnamese', 'Mexican', 'Italian',
+				  'Greek', 'Indian', 'American', 'Other', 'None'],['Hair', 'Makeup','Nails','Skin Care','Other','None'],['Financial', 'Medical', 'Media & Entertainment', 
 				 'Electricity and Power', 'Transporation', 'Retail', 'Travel', 'Technology', 'Aviation/Aeronautics','Government', 'Other'],
 				 ['<5', '5->9', '10->14', '15+'], ['Male', 'Female'], ['< 4ft 6in', '4ft 6in -> 4ft 11in', '5ft -> 5ft 5in', 
 				 '5ft 6in ->5ft 11in', '6ft -> 6ft 5in', '6ft 6in -> 6ft 11in', '>= 7ft'], ['<100', '100->149', '150->199', '200->249', 
@@ -48,6 +49,7 @@ loc_list = [["University of Washington", "Seattle University", "Bellevue College
 sample_data = [{'City': 'Seattle'}, {'School': 'Other'}, {'Difficulty_Level': 'Post Grad'}, 
 				{'Course_Count': '40+'}, {'GPA': '>=3.50'}, {'Major': 'Other'}, {'Grad_Year': 'After'}, 
 				{'Sports': 'None'}, {'Cultural': 'None'}, {'Arts': 'None'}, {'Travel': 'None'}, 
+	       			{'Food': 'Chinese'}, {'Beauty': 'Hair'}
 				{'Current_Industry': 'Other'}, {'Number_Previous_Companies': '15+'}, {'Sex': 'Female'}, 
 				{'Height': '>= 7ft'}, {'Weight': '>=500'}, {'Race': 'Other'}]
 
