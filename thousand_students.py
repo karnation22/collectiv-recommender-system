@@ -52,7 +52,7 @@ loc_list = [["University of Washington", "Seattle University", "Bellevue College
 sample_data = [{'City': 'Seattle'}, {'School': 'Other'}, {'Difficulty_Level': 'Post Grad'}, 
 				{'Course_Count': '40+'}, {'GPA': '>=3.50'}, {'Major': 'Other'}, {'Grad_Year': 'After'}, 
 				{'Sports': 'None'}, {'Cultural': 'None'}, {'Arts': 'None'}, {'Travel': 'None'}, 
-	       			{'Food': 'Chinese'}, {'Beauty': 'Hair'}
+	       			{'Food': 'Chinese'}, {'Shopping': 'Furniture'}
 				{'Current_Industry': 'Other'}, {'Number_Previous_Companies': '15+'}, {'Sex': 'Female'}, 
 				{'Height': '>= 7ft'}, {'Weight': '>=500'}, {'Race': 'Other'}]
 
