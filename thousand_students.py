@@ -8,11 +8,11 @@ import os
 
 #these are the main themes for which a student is defined
 theme_list = ["School", "Difficulty Level", "Course Count", "GPA", "Major", "Grad_Year", 
-			"Sports", "Cultural", "Arts", "Travel", "Food","Beauty","Current Industry", "num_prev_comp",
+			"Sports", "Cultural", "Arts", "Travel", "Food","Shopping","Current Industry", "num_prev_comp",
 			"Sex", "Height", "Weight", "Race"]
 
 ## Sex (Radio), Race (Radio), School (Radio), Major (Radio), Current Industry (Radio), 
-	## Sports (Checkbox), Cultural (Checkbox), Arts (Checkbox), Travel (Checkbox), Food (Checkbox) , Beauty (Checkbox)
+	## Sports (Checkbox), Cultural (Checkbox), Arts (Checkbox), Travel (Checkbox), Food (Checkbox) , Shopping (Checkbox)
 
 #this is a dump of all of the choices for each theme of same chronological order
 choice_list = [['Public', 'Private', 'Co-Ed', 'Religious Affiliation', 'Other'],['<10', '10->19', '20->29', '30-39', '40+'],
@@ -24,7 +24,7 @@ choice_list = [['Public', 'Private', 'Co-Ed', 'Religious Affiliation', 'Other'],
 				['Photography/Video', 'Visual Arts', 'Sculpture/3D', 'Drawing', 'Ceramics', 'Collage', 
 				 'Fine Arts', 'Architecture', 'Other', 'None'],['Study Abroad', 'Vacation', 'Business', 'Exploration', 
 				 'Missionary/Religious Travel','Honeymoon', 'Other', 'None'], ['Chinese', 'Thai', 'Vietnamese', 'Mexican', 'Italian',
-				  'Greek', 'Indian', 'American', 'Other', 'None'],['Hair', 'Makeup','Nails','Skin Care','Other','None'],['Financial', 'Medical', 'Media & Entertainment', 
+				  'Greek', 'Indian', 'American', 'Other', 'None'],['Toys','Electronics','Clothing','Furniture','Beauty', 'Other','None'],['Financial', 'Medical', 'Media & Entertainment', 
 				 'Electricity and Power', 'Transporation', 'Retail', 'Travel', 'Technology', 'Aviation/Aeronautics','Government', 'Other'],
 				 ['<5', '5->9', '10->14', '15+'], ['Male', 'Female'], ['< 4ft 6in', '4ft 6in -> 4ft 11in', '5ft -> 5ft 5in', 
 				 '5ft 6in ->5ft 11in', '6ft -> 6ft 5in', '6ft 6in -> 6ft 11in', '>= 7ft'], ['<100', '100->149', '150->199', '200->249', 
